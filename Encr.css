@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  color: #fff;
+  animation: fadeIn 2s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: slideIn 1s ease-out;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+textarea:focus {
+  transform: scale(1.02);
+}
+
+button {
+  background-color: #ffffff;
+  color: #ff7e5f;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #ffe0d3;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
