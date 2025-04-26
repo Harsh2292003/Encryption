@@ -3,10 +3,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #0f0f0f, #0f2255);
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: white;
+  color: rgb(183, 230, 16);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ h1 {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: #ee9105;
   font-size: 1.5rem;
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.1);
